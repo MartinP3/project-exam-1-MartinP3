@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/global.css" rel="stylesheet" />
+    <link href="../css/index.css" rel="stylesheet" />
+    <title>Home</title>
+</head>
+<body onload="loadPage()">
+    
+        <header>
+            <div>
+                <img class="headerLogo" src="../assets/logo.png">
+                <div class="headerTitle">Martin's Kitchen</div>
+                <hr>
+                <div class="headerQuote">A bit of everything to make</div>
+            </div>
+            <nav class="navBar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="blogs.html">Recipes</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </nav>
+        </header>
+        <main>
+            <div id="loader"></div>
+            <div style="display:none;" id="myDiv">
+                <div class="mainContent">
+                    <div class="carousel">
+                        <div class="carousel__item">
+                            <div>
+                                <img src="https://dummyimage.com/200x150/999999/fff">
+                                Picture 1
+                            </div>
+                            <div>
+                                <img src="https://dummyimage.com/200x150/999999/fff">
+                                Picture 2
+                            </div><div>
+                                <img src="https://dummyimage.com/200x150/999999/fff">
+                                Picture 3
+                            </div><div>
+                                <img src="https://dummyimage.com/200x150/999999/fff">
+                                Picture 4
+                            </div>
+                        </div>
+                        <div class="carousel__item">
+                            <div>Picture 5</div>
+                            <div>Picture 6</div>
+                            <div>Picture 7</div>
+                            <div>Picture 8</div>
+                        </div>
+                        <div class="carousel__item">
+                            <div>Picture 1</div>
+                            <div>Picture 10</div>
+                            <div>Picture 11</div>
+                            <div>Picture 12</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="emailSubscription">
+                    
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2022 Martin Pedersen</br>
+                <a href="contact.html">~Contact Us~</a>
+            </p>
+        </footer>
+    <script src="../js/global.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+</html>
