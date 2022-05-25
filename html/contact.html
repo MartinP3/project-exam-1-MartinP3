@@ -4,10 +4,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../css/global.css" rel="stylesheet" />
+    <link href="../css/contact.css" rel="stylesheet" />
     <title>Home</title>
 </head>
 <body onload="loadPage()">
@@ -16,7 +18,6 @@
             <div>
                 <img class="headerLogo" src="../assets/logo.png">
                 <div class="headerTitle">Martin's Kitchen</div>
-                <hr>
                 <div class="headerQuote">A bit of everything to make</div>
             </div>
             <nav class="navBar">
@@ -26,22 +27,81 @@
                 <li><a href="contact.html" class="active">Contact</a></li>
             </nav>
         </header>
+        <div id="loader"></div>
         <main>
-            <div id="loader"></div>
-            <div style="display:none;" id="myDiv" class="animate-bottom"></div>
-            <div class="mainContent">
-    
-            </div>
-            <div class="emailSubscription">
-    
-            </div>
-            </div>
+            <div class="container" style="display:none;" id="myDiv">
+                    <div class="title">Contact Us</div>
+                    <form id="contact-form" novalidate>
+                        <div class="form-success" id="form-success">Your form has been sent </br>Thank you for sending this.</div>
+                        <div class="user-details">
+                            <div class="input-box">
+                                <span class="details">Full Name*</span>
+                                <input type="text" id="full-name" name="full name" placeholder="i.e Ola Nordmann" required>
+                                <div class="form-error" id="full-name-error">Please enter your full name (min 6 chars)</div>
+                            </div>
+                        </div>
+                        <div class="user-details">
+                            <div class="input-box">
+                                <span class="details">Email*</span>
+                                <input type="email" id="email" name="email" placeholder="i.e ola@nordmann.no" required>
+                                <div class="form-error" id="email-error">Please enter your email</div>
+                            </div>
+                        </div>
+                        <div class="user-details">
+                            <div class="input-box">
+                                <span class="details">Subject*</span>
+                                <input type="text" id="subject" name="subject" placeholder="i.e Make a recipe for this!" required>
+                                <div class="form-error" id="subject-error">Please enter a subject (min 16 chars)</div>
+                            </div>
+                        </div>
+                        <div class="user-details">
+                            <div class="input-box">
+                                <span class="details">Message*</span>
+                                <textarea id="message" name="message"> </textarea>
+                            </div>
+                            <div class="form-error" id="message-error">Please enter a message (min 26 chars)</div>
+                        </div>
+                        <div class="button">
+                            <input type="submit" value="Send">
+                        </div>
+                    </form>
+                </div> 
+                <div class="container">
+                    <div class="title">Additional info:</div>
+                    <ul class="additional-info">
+                        <li>Phone: 95432555</li>
+                        <li>Email: contact@mkjøkken.no</li>
+                        <li>Address: Tulleveien 12, Ålesund</li>
+                    </ul>
+                </div>
         </main>
         <footer>
-            <p>&copy; 2022 Martin Pedersen</br>
-                <a href="contact.html">~Contact Us~</a>
-            </p>
+            <div class="footer-upper">
+                <div class="footer-social-media">
+                    <div>Follow Us</div>
+                    <a href="https://twitter.com" target="_blank">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                    <a href="https://facebook.com" target="_blank">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </div>
+                <div class="footer-links">
+                    <div>Links</div>
+                    <a href="index.html">Home</a> | 
+                    <a href="blogs.html">Recipes</a> | 
+                    <a href="about.html">About</a> | 
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+                <div class="footer-copyright">&copy; 2022 Martin Pedersen</div>
         </footer>
     <script src="../js/global.js"></script>
+    <script src="../js/contact.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

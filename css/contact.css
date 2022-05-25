@@ -1,0 +1,86 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 448px;
+    width: 100%;
+    background: var(--yellowColor);
+    padding: 1.5rem;
+    margin: 1em 0;
+    border-radius: 5px;
+}
+
+.container .title {
+    font-size: 2.5em;
+    position: relative;
+}
+
+.container form .details {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+form .button input{
+    width: 100%;
+    padding: 1em;
+    font-size: 1.5em;
+    background-color: var(--buttonColor);
+    color: #fff;
+    border: solid 1px var(--buttonColor);
+    min-width: 200px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+form .button input:hover{
+    width: 100%;
+    padding: 1em;
+    font-size: 1.5em;
+    background-color: rgb(182, 182, 182);
+    color: white;
+}
+
+form .user-details input, textarea {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    min-width: 200px;
+    margin-bottom: 15px;
+    border: solid 1px grey;
+    border-bottom-width: 2px;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+    min-height: 150px;
+    max-height: 150px;
+    font-size: 1.2em;
+}
+
+.additional-info {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.additional-info li {
+    margin-bottom: 5px;
+}
+
+.form-error {
+    display: none;
+    color: red;
+    margin-top: -8px;
+    margin-bottom: 7px;
+  }
+  
+  .form-success {
+    display: none;
+    color: green;
+    margin-bottom: 5px;
+  }
