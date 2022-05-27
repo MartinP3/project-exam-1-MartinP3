@@ -25,3 +25,16 @@
     margin-top: 11px;
     margin-bottom: 4px;
 }
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 450px) {
+    .container {
+        max-width: 340px;
+        padding: 0.5rem;
+    }
+}
