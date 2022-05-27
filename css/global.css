@@ -6,6 +6,7 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     display: block;
+    background-color: #efefef
 }
 
 :root {
@@ -21,6 +22,15 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.container {
+    max-width: 448px;
+    width: 100%;
+    background: var(--yellowColor);
+    padding: 1.5rem;
+    margin: 1em 0;
+    border-radius: 5px;
 }
 
 main {
@@ -39,8 +49,13 @@ ul {
     list-style: none;
 }
 
+button:hover,
+.button input:hover {
+    cursor: pointer;
+}
+
 .active {
-    color: #ffd66f;
+    color: #956a00;
     text-decoration: underline;
     font-size: 1.2em;
 }
@@ -51,7 +66,6 @@ ul {
   }
 
 #loader {
-    position: relative;
     left: 50%;
     top: 40%;
     width: 66px;
@@ -110,7 +124,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--yellowColor);
+    color: #956a00;
 }
 
 /* Footer */

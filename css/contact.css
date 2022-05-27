@@ -1,12 +1,3 @@
-.container {
-    max-width: 448px;
-    width: 100%;
-    background: var(--yellowColor);
-    padding: 1.5rem;
-    margin: 1em 0;
-    border-radius: 5px;
-}
-
 .container .title {
     font-size: 2.5em;
     position: relative;
@@ -20,7 +11,7 @@
 
 form .button input{
     width: 100%;
-    padding: 1em;
+    padding: 1rem;
     font-size: 1.5em;
     background-color: var(--buttonColor);
     color: #fff;
@@ -33,9 +24,8 @@ form .button input{
 form .button input:hover{
     width: 100%;
     padding: 1em;
-    font-size: 1.5em;
     background-color: rgb(182, 182, 182);
-    color: white;
+    color: #000;
 }
 
 form .user-details input, textarea {
@@ -76,4 +66,8 @@ textarea {
     display: none;
     color: green;
     margin-bottom: 5px;
+  }
+
+  #loader {
+      position: relative;
   }
