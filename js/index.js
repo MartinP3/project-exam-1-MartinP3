@@ -6,9 +6,8 @@ const dotsNav = document.querySelector(".carousel__nav");
 const dots = Array.from(dotsNav.children);
 
 const slideWidth = slides[0].getBoundingClientRect().width;
-// console.log(slideWidth);
 
-// Arrange the slides next to one another
+// Arranges the slides next to one another
 const setSlidePosition = (slide, index) => {
     slide.style.left = slideWidth * index + "px";
 }
@@ -65,7 +64,7 @@ nextButton.addEventListener("click", e => {
 })
 
 
-// when I click the nav, indicators, move to that slide
+// when I click the dots and indicators, move to that slide
 dotsNav.addEventListener("click", e => {
     // What indicator was clicked on?
     const targetDot = e.target.closest("button");
