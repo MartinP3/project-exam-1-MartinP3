@@ -1,11 +1,47 @@
-const track = document.querySelector(".carousel__track");                        // Carousel stuff
+// url to populate latest posts
+const baseUrl = "https://koyanskaya.com/wp-json/wp/v2/posts?categories=7&per_page=20";
+
+let theCarousel = "";
+const carouselPosts = document.querySelector(".carousel__track");
+
+async function latestPosts(url) {
+
+    // Fetching the first 10 posts.
+
+    try {
+        const response = await fetch(url)
+        const posts = await response.json()
+        console.log(posts);
+
+        carouselPosts.innerHTML = "";
+
+        // Displaying post details
+    
+        posts.forEach((post) => {
+            carouselPosts.innerHTML += `
+            <li class="carousel__slide current-slide">
+                                <img class="carousel__image" src="${post.better_featured_image.source_url}" alt="${post.better_featured_image.alt_text}">
+                            </li>`
+        });
+    } catch (error) {
+        carouselPosts.innerHTML += `<div class="container">Sorry there was an issue loading in the blog list page, let us know through the contact form and we'll get to it asap!</div>`;
+    }
+}
+latestPosts(baseUrl);
+
+// Carousel stuff
+
+const track = document.querySelector(".carousel__track");
 const slides = Array.from(track.children);
 const nextButton = document.querySelector(".carousel__button--right");
 const prevButton = document.querySelector(".carousel__button--left");
 const dotsNav = document.querySelector(".carousel__nav");
 const dots = Array.from(dotsNav.children);
 
+console.log(track.children);
+
 const slideWidth = slides[0].getBoundingClientRect().width;
+
 
 // Arranges the slides next to one another
 const setSlidePosition = (slide, index) => {
