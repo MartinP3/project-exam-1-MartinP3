@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/1e8771b7f9.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0ef9526f11.js" crossorigin="anonymous"></script>
     <link href="./css/global.css" rel="stylesheet" />
     <link href="./css/index.css" rel="stylesheet" />
     <!-- Hotjar Tracking Code for https://thunderous-zabaione-bb5979.netlify.app/ -->
@@ -26,7 +26,7 @@
 </script>
     <title>Martin's kitchen | Home</title>
 </head>
-<body onload="loadPage()">
+<body>
         <header>
             <div>
                 <img class="headerLogo" src="./assets/logo.png">
@@ -41,73 +41,42 @@
             </nav>
         </header>
         <main>
-            <div id="loader"></div>
-            <div style="display:none;" id="myDiv">
-                <div class="mainContent">
-                    <h1>Latest Recipes</h1>
-                    <div class="carousel">
-                        <div class="carousel__item">
-                            <div>
-                                <img src="https://dummyimage.com/200x150/999999/fff">
-                                <p>Picture 1</p>
-                            </div>
-                            <div>
-                                <img src="https://dummyimage.com/200x150/999999/fff">
-                                <p>Picture 2</p>
-                            </div>
-                            <div>
-                                <img src="https://dummyimage.com/200x150/999999/fff">
-                                <p>Picture 3</p>
-                            </div>
-                        </div>
-                        <div class="carousel__item">
-                            <div>
-                                <img src="https://dummyimage.com/200x150/999999/fff">
-                                <p>Picture 4</p>
-                            </div>
-                            <div>
-                                <img src="https://dummyimage.com/200x150/999999/fff">
-                                <p>Picture 5</p>
-                            </div>
-                            <div>
-                                <img src="https://dummyimage.com/200x150/999999/fff">
-                                <p>Picture 6</p>
-                            </div>
-                        </div>
-                        <div class="carousel__item">
-                            <div>
-                                <img src="https://dummyimage.com/200x150/999999/fff">
-                                <p>Picture 7</p>
-                            </div>
-                            <div>
-                                <img src="https://dummyimage.com/200x150/999999/fff">
-                                <p>Picture 8</p>
-                            </div>
-                            <div>
-                                <img src="https://dummyimage.com/200x150/999999/fff">
-                                <p>Picture 9</p>
-                            </div>
-                        </div>
-                        <div class="carousel__item">
-                            <div>
-                                <img src="https://dummyimage.com/200x150/999999/fff">
-                                <p>Picture 10</p>
-                            </div>
-                            <div>
-                                <img src="https://dummyimage.com/200x150/999999/fff">
-                                <p>Picture 11</p>
-                            </div>
-                            <div>
-                                <img src="https://dummyimage.com/200x150/999999/fff">
-                                <p>Picture 12</p>
-                            </div>
-                        </div>
+            <div class="mainContent">
+                <h1>Latest Recipes</h1>
+                <div class="carousel">
+                    <button class="carousel__button carousel__button--left is-hidden">
+                        <span class="text"><</span>
+                    </button>
+                    <div class="carousel__track-container">
+                        <ul class="carousel__track">
+                            <li class="carousel__slide current-slide">
+                                <img class="carousel__image" src="assets/pexels.jpg" alt="">
+                            </li>
+                            <li class="carousel__slide">
+                                <img class="carousel__image" src="assets/falafel.jpg" alt="">
+                            </li>
+                            <li class="carousel__slide">
+                                <img class="carousel__image" src="assets/Moussaka-vegetar.jpg">
+                            </li>
+                            <li class="carousel__slide">
+                                <img class="carousel__image" src="assets/pexels2.jpg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="carousel__button carousel__button--right">
+                        <span class="text">></span>
+                    </button>
+
+                    <div class="carousel__nav">
+                        <button class="carousel__indicator current-slide"></button>
+                        <button class="carousel__indicator"></button>
+                        <button class="carousel__indicator"></button>
+                        <button class="carousel__indicator"></button>
                     </div>
                 </div>
+            </div>
+            <div class="emailSubscription">
                 
-                <div class="emailSubscription">
-                    
-                </div>
             </div>
         </main>
         <footer>

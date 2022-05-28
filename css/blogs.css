@@ -1,3 +1,10 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .blogs-container {
     display: grid;
     grid-template-rows: 1fr 1fr;
