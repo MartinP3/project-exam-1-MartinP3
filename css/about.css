@@ -23,7 +23,6 @@ main {
 
 .about-container h1,
 .about-container h2 {
-    text-align: center;
     padding-bottom: 1rem;
     font-size: 3em;
 }

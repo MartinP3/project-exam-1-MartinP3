@@ -16,9 +16,13 @@ main {
     flex-direction: column;
 }
 
-.container ul {
+.blogs-page ul {
     margin: 4px 0px 0px 12px;
     padding: 10px 0px 8px 10px;
+}
+
+.blogs-page ol {
+    margin-left: 22px;
 }
 
 .container p {
