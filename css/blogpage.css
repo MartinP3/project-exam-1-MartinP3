@@ -11,6 +11,7 @@
 
 .container ul {
     margin: 4px 0px 0px 12px;
+    padding: 10px 0px 8px 10px;
 }
 
 .container p {
@@ -24,6 +25,14 @@
 .container h2 {
     margin-top: 11px;
     margin-bottom: 4px;
+}
+
+.blogs-page ul li{
+    padding-bottom: 2px;
+}
+
+.blogs-page ol li {
+    padding: 2px 0px
 }
 
 @media (max-width: 600px) {
