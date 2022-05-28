@@ -1,8 +1,10 @@
-main {
-    display: flex;
+.blogs-page{
+    width: 100%;
     flex-direction: column;
-    justify-content: center;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 20px 0px 60px 0px;
 }
 
 .container {
@@ -16,6 +18,72 @@ main {
     flex-direction: column;
 }
 
+/* Modal image */
+.blog-image {
+    cursor: pointer;
+    object-fit: cover;
+    transition: 0.3s ease-in-out;
+}
+
+.blog-image:hover {
+    transform: scale(1.05);
+    padding-bottom: 0.5rem;
+}
+
+#modal {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+    top: 0;
+    display: none;
+  }
+#modal.modal-active {
+    display: block;
+  }
+
+.opened-img {
+    margin: 0 auto;
+    position: fixed;
+    max-width: 1000px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+.modal img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.closeBtn {
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.closeBtn:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+/* Blog page things */
 .blogs-page ul {
     margin: 4px 0px 0px 12px;
     padding: 10px 0px 8px 10px;
@@ -46,22 +114,8 @@ main {
     padding: 2px 0px
 }
 
-@media (max-width: 600px) {
-    .container {
-        max-width: 500px;
-    }
-}
-
-@media (max-width: 450px) {
-    .container {
-        max-width: 340px;
-        padding: 0.5rem;
-    }
-
-    .blogs-page ol {
-        list-style: none;
-    }
-    .blogs-page ol li {
-        padding: 5px 0px
+@media only screen and (max-width: 450px) {
+    .container{
+        padding: 1rem;
     }
 }

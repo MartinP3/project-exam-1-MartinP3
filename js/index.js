@@ -109,7 +109,7 @@ async function latestPosts(url) {
             carouselPosts.innerHTML += `
             <li class="carousel__slide current-slide">
                                 <img class="carousel__image" src="${post.better_featured_image.source_url}" alt="${post.better_featured_image.alt_text}">
-                            </li>`
+                                </li>`
             if(index === 0){
             dotsNav.innerHTML += `<button class="carousel__indicator current-slide"></button>`
           } else{

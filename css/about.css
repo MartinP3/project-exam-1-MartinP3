@@ -1,8 +1,10 @@
-main {
-    display: flex;
+.about-container {
+    width: 100%;
     flex-direction: column;
-    justify-content: center;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 20px 0px 60px 0px;
 }
 
 .container {
@@ -37,20 +39,8 @@ main {
     max-width: 652px; /*Weird number but perfect before it starts pushing/shrinking.*/
 }
 
-@media only screen and (max-width: 600px) {
-    .container {
-        max-width: 500px;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .container {
-        max-width: 400px;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .container {
-        max-width: 360px;
+@media only screen and (max-width: 450px) {
+    .container{
+        padding: 1rem;
     }
 }
