@@ -116,6 +116,7 @@ async function latestPosts(url) {
             dotsNav.innerHTML += `<button class="carousel__indicator"></button>`
           }
         });
+        allSliders();
     } catch (error) {
         carouselPosts.innerHTML += `<div class="container">Sorry there was an issue loading in the blog list page, let us know through the contact form and we'll get to it asap!</div>`;
     }
