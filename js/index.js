@@ -1,10 +1,11 @@
 // Carousel stuff
+const dotsNav = document.querySelector(".carousel__nav");
+
 function allSliders() {
     const track = document.querySelector(".carousel__track");
     const slides = Array.from(track.children);
     const nextButton = document.querySelector(".carousel__button--right");
     const prevButton = document.querySelector(".carousel__button--left");
-    const dotsNav = document.querySelector(".carousel__nav");
     const dots = Array.from(dotsNav.children);
     
     console.log(slides);
@@ -104,12 +105,16 @@ async function latestPosts(url) {
 
         // Displaying post details
     
-        posts.forEach((post) => {
+        posts.forEach((post, index) => {
             carouselPosts.innerHTML += `
             <li class="carousel__slide current-slide">
                                 <img class="carousel__image" src="${post.better_featured_image.source_url}" alt="${post.better_featured_image.alt_text}">
                             </li>`
-            allSliders();
+            if(index === 0){
+            dotsNav.innerHTML += `<button class="carousel__indicator current-slide"></button>`
+          } else{
+            dotsNav.innerHTML += `<button class="carousel__indicator"></button>`
+          }
         });
     } catch (error) {
         carouselPosts.innerHTML += `<div class="container">Sorry there was an issue loading in the blog list page, let us know through the contact form and we'll get to it asap!</div>`;
