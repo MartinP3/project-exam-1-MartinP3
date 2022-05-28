@@ -37,4 +37,11 @@
         max-width: 340px;
         padding: 0.5rem;
     }
+
+    .blogs-page ol {
+        list-style: none;
+    }
+    .blogs-page ol li {
+        padding: 5px 0px
+    }
 }

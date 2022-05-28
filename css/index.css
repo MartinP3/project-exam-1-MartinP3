@@ -10,7 +10,7 @@
 h1 {
     font-size: 2rem;
     margin: 1em 0;
-    color: var(--yellowColor);
+    color: var(--brownYellowColor);
 }
 
 .carousel {
