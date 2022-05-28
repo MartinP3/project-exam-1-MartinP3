@@ -1,8 +1,6 @@
 // url to populate latest posts
 const baseUrl = "https://koyanskaya.com/wp-json/wp/v2/posts?categories=7&per_page=20";
 
-
-
 let theCarousel = "";
 const carouselPosts = document.querySelector(".carousel__track");
 
@@ -27,7 +25,6 @@ async function latestPosts(url) {
     } catch (error) {
         carouselPosts.innerHTML += `<div class="container">Sorry there was an issue loading in the blog list page, let us know through the contact form and we'll get to it asap!</div>`;
     }
-
 }
 latestPosts(baseUrl);
 
