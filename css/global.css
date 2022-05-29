@@ -8,16 +8,19 @@ body {
     margin: 0;
     font-family: var(--bodyFont);
     display: block;
-    background-color: #efefef
+    background-color: var(--bodyColor);
 }
 
 :root {
     --bodyFont:  'Roboto', sans-serif;
     --headerFont:'Libre Baskerville', serif;
-    
+    --playfairFont: 'Playfair Display', 'Times new';
+
+    --bodyColor: #efefef;
     --lightYellowColor: #FFE5A3;
     --brownYellowColor: #956a00;
     --yellowColor: #ffd66f;
+    --whiteColor: #ffffff;
     --blackColor: #000000;
     --buttonColor: rgb(69, 69, 69);
     --socialsColor: rgb(150, 150, 150);
@@ -113,7 +116,7 @@ form .button input{
     padding: 1rem;
     font-size: 1.5em;
     background-color: var(--buttonColor);
-    color: #fff;
+    color: var(--whiteColor);
     border: solid 1px var(--buttonColor);
     min-width: 200px;
     transition: 0.3s;
@@ -124,7 +127,7 @@ form .button input:hover{
     width: 100%;
     padding: 12px;
     background-color: rgb(182, 182, 182);
-    color: #000;
+    color: var(--blackColor);
 }
 
 form .user-details input, textarea {
@@ -176,7 +179,7 @@ header {
 }
 
 .headerQuote {
-    font-family: 'Playfair Display', 'Times new';
+    font-family: var(--playfairFont);
     font-size: 2.0em;
 }
 nav {
