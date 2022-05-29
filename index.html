@@ -24,70 +24,81 @@
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
-    <title>Martin's kitchen | Home</title>
+    <title>Martin's Kitchen | Home</title>
 </head>
 <body>
-        <header>
-            <div>
-                <a href="index.html"><img class="headerLogo" src="./assets/logo.png"></a>
-                <div class="headerTitle">Martin's Kitchen</div>
-                <div class="headerQuote">A bit of everything to make</div>
+    <header>
+        <div>
+            <a href="index.html"><img class="headerLogo" src="./assets/logo.png"></a>
+            <div class="headerTitle">Martin's Kitchen</div>
+            <div class="headerQuote">A bit of everything to make</div>
+        </div>
+        <nav>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="blogs.html">Recipes</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </nav>
+    </header>
+    <main>
+        <div class="mainContent">
+            <h1>Latest Recipes Gallery</h1>
+            <div class="carousel">
+                <button class="carousel__button carousel__button--left is-hidden">
+                    <span class="text"><</span>
+                </button>
+                <div class="carousel__track-container">
+                    <ul class="carousel__track"></ul>
+                </div>
+                <button class="carousel__button carousel__button--right">
+                    <span class="text">></span>
+                </button>
+                <div class="carousel__nav"></div>
             </div>
-            <nav>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="blogs.html">Recipes</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </nav>
-        </header>
-        <main>
-            <div class="mainContent">
-                <h1>Latest Recipes Gallery</h1>
-                <div class="carousel">
-                    <button class="carousel__button carousel__button--left is-hidden">
-                        <span class="text"><</span>
-                    </button>
-                    <div class="carousel__track-container">
-                        <ul class="carousel__track">
-                        </ul>
-                    </div>
-                    <button class="carousel__button carousel__button--right">
-                        <span class="text">></span>
-                    </button>
 
-                    <div class="carousel__nav">             
+            <h2><a href="blogs.html">View all recipes</a></h2>
+
+            <div class="container">
+                <form id="contact-form" novalidate>
+                    <h3>Sign up for our newsletter!</h3>
+                    <div class="user-details">
+                        <div class="input-box">
+                            <input type="email" id="email" name="email" placeholder="i.e ola@nordmann.no" required>
+                            <div class="form-error" id="email-error">Please enter your email</div>
+                            <div class="form-success" id="form-success">Thanks for signing up!</div>
+                        </div>
                     </div>
-                </div>
+                    <div class="button">
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
             </div>
-            <div class="emailSubscription">
-                
+        </div>
+    </main>
+    <footer>
+        <div class="footer-upper">
+            <div class="footer-social-media">
+                <div>Follow Us</div>
+                <a href="https://twitter.com" target="_blank">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+                <a href="https://facebook.com" target="_blank">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
             </div>
-        </main>
-        <footer>
-            <div class="footer-upper">
-                <div class="footer-social-media">
-                    <div>Follow Us</div>
-                    <a href="https://twitter.com" target="_blank">
-                        <ion-icon name="logo-twitter"></ion-icon>
-                    </a>
-                    <a href="https://facebook.com" target="_blank">
-                        <ion-icon name="logo-facebook"></ion-icon>
-                    </a>
-                    <a href="https://instagram.com" target="_blank">
-                        <ion-icon name="logo-instagram"></ion-icon>
-                    </a>
-                </div>
-                <div class="footer-links">
-                    <div>Links</div>
-                    <a href="index.html">Home</a> | 
-                    <a href="blogs.html">Recipes</a> | 
-                    <a href="about.html">About</a> | 
-                    <a href="contact.html">Contact</a>
-                </div>
+            <div class="footer-links">
+                <div>Links</div>
+                <a href="index.html">Home</a> | 
+                <a href="blogs.html">Recipes</a> | 
+                <a href="about.html">About</a> | 
+                <a href="contact.html">Contact</a>
             </div>
-                <div class="footer-copyright">&copy; 2022 Martin Pedersen</div>
-        </footer>
-    <script src="./js/global.js"></script>
+        </div>
+        <div class="footer-copyright">&copy; 2022 Martin Pedersen</div>
+    </footer>
     <script src="./js/index.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

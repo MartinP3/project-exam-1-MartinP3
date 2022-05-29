@@ -1,3 +1,5 @@
+/* Blogpage CSS */
+
 .blogs-page{
     width: 100%;
     flex-direction: column;
@@ -18,7 +20,7 @@
     flex-direction: column;
 }
 
-/* Modal image */
+/* Modal image things */
 .blog-image {
     cursor: pointer;
     object-fit: cover;
@@ -39,6 +41,7 @@
     top: 0;
     display: none;
   }
+
 #modal.modal-active {
     display: block;
   }
@@ -66,22 +69,6 @@
     width: 50%;
     object-fit: cover;
 }
-
-.closeBtn {
-    color: rgba(255, 255, 255, 0.87);
-    font-size: 25px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 20px;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-}
-
-.closeBtn:hover {
-    color: rgb(255, 255, 255);
-}
-
 
 /* Blog page things */
 .blogs-page ul {

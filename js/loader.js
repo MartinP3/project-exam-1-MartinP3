@@ -1,3 +1,4 @@
+// Loader js
 var myVar;
 
 function loadPage() {

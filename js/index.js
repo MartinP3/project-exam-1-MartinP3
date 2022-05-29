@@ -1,4 +1,4 @@
-// Carousel stuff
+// Carousel function 
 const dotsNav = document.querySelector(".carousel__nav");
 
 function allSliders() {
@@ -24,12 +24,14 @@ function allSliders() {
         currentSlide.classList.remove("current-slide");
         targetSlide.classList.add("current-slide");
     }
-    
+
+    // moves the dots around to current holder of the class
     const updateDots = (currentDot, targetDot) => {
         currentDot.classList.remove("current-slide");
         targetDot.classList.add("current-slide");
     }
-    
+
+    // Hide arrows where they're not meant to be (start, end)
     const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
         if (targetIndex === 0) {
             prevButton.classList.add("is-hidden");
@@ -111,10 +113,10 @@ async function latestPosts(url) {
                                 <img class="carousel__image" src="${post.better_featured_image.source_url}" alt="${post.better_featured_image.alt_text}">
                                 </li>`
             if(index === 0){
-            dotsNav.innerHTML += `<button class="carousel__indicator current-slide"></button>`
-          } else{
-            dotsNav.innerHTML += `<button class="carousel__indicator"></button>`
-          }
+                dotsNav.innerHTML += `<button class="carousel__indicator current-slide"></button>`   
+          } else {
+                dotsNav.innerHTML += `<button class="carousel__indicator"></button>`
+            }
         });
         allSliders();
     } catch (error) {
@@ -122,3 +124,32 @@ async function latestPosts(url) {
     }
 }
 latestPosts(baseUrl);
+
+// Email verification for the newsletter
+const form = document.querySelector("#contact-form");
+const email = document.querySelector("#email");
+const emailError = document.querySelector("#email-error");
+const formSuccess = document.querySelector("#form-success")
+
+function validateForm() {
+    event.preventDefault();
+
+    if (validateEmail(email.value)) {
+        emailError.style.display = "none";
+    } else {
+        emailError.style.display = "block";
+    }
+    if ((validateEmail(email.value))) {
+        formSuccess.style.display = "block";
+        
+    } else {
+        formSuccess.style.display = "none";
+    }
+}
+form.addEventListener("submit", validateForm);
+
+function validateEmail(email) {
+    const RegEx = /\S+@\S+\.\S+/;
+    const emailPattern = RegEx.test(email);
+    return emailPattern;
+}

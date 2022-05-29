@@ -1,3 +1,27 @@
+/* index CSS */
+
+.mainContent {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2 a {
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: var(--brownYellowColor);
+}
+
+h2 {
+    display: block;
+    margin-top: -25px;
+    margin-bottom: 0.7rem;
+}
+/* ########################## */
+
+/* Carousel CSS */
 .carousel {
     position: relative;
     height: 400px;
@@ -73,23 +97,10 @@
 }
 
 .carousel__indicator.current-slide {
-    background: rgba(0, 0, 0, .75);
+    background: rgba(0, 0, 0, .6);
 }
 
 .is-hidden {
     display: none;
 }
-
-.mainContent {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-h1 {
-    font-size: 2rem;
-    margin: 1em 0;
-    color: var(--brownYellowColor);
-}
+/* ########################## */

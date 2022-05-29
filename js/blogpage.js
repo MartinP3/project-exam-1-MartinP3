@@ -28,7 +28,7 @@ async function fetchBlogPost() {
             <h1>${post.title.rendered}</h1>
             <div>${post.content.rendered}</div>
         </div>`
-      newTitle.innerHTML = `Martin's kitchen | ${post.title.rendered}`;
+      newTitle.innerHTML = `Martin's Kitchen | ${post.title.rendered}`;
       
       // modal image opening and closing
         const images = document.querySelector(".blog-image");

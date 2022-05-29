@@ -1,3 +1,5 @@
+// Form validating 
+
 const form = document.querySelector("#contact-form");
 const fullName = document.querySelector("#full-name");
 const fullNameError = document.querySelector("#full-name-error");
@@ -31,7 +33,7 @@ function validateForm() {
         messageError.style.display = "none";
     } else {
         messageError.style.display = "block";
-    }
+    } // length checking and email checking
     if ((checkLength(fullName.value, 5)) &&
         (checkLength(message.value, 25)) &&
         (checkLength(subject.value, 15)) &&
@@ -43,6 +45,7 @@ function validateForm() {
 }
 form.addEventListener("submit", validateForm);
 
+// trims away spaces to count only characters
 function checkLength(value, len) {
     if (value.trim().length > len) {
         return true;

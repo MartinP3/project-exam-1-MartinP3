@@ -16,7 +16,7 @@ async function fetchApi (url){
 const aboutContainer = document.querySelector(".about-container")
 
 async function addAboutContent() {
-  try{
+  try{ // fetching the about me post so it can be updated directly whenever.
     const aboutInfo = await fetchApi(baseUrl + routes.posts + "/93");
     console.log(aboutInfo);
       aboutContainer.innerHTML += `
@@ -27,8 +27,7 @@ async function addAboutContent() {
         <div class="container">
         <h1 class="title">About me</h1>
         ${aboutInfo.content.rendered}
-        </div>
-      `;
+        </div>`;
   
   } catch (error) {
     console.log(error);
