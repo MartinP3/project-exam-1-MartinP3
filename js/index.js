@@ -113,9 +113,9 @@ async function latestPosts(url) {
                                 <img class="carousel__image" src="${post.better_featured_image.source_url}" alt="${post.better_featured_image.alt_text}">
                                 </a></div>`
             if(index === 0){
-                dotsNav.innerHTML += `<button class="carousel__indicator current-slide"><span class="visually-hidden">image</span></button>`   
+                dotsNav.innerHTML += `<button class="carousel__indicator current-slide"><p class="visually-hidden">image</p></button>`   
           } else {
-                dotsNav.innerHTML += `<button class="carousel__indicator"></button>`
+                dotsNav.innerHTML += `<button class="carousel__indicator"><p class="visually-hidden">image</p></button>`
             }
         });
         allSliders();
