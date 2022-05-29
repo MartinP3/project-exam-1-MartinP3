@@ -20,6 +20,10 @@
     flex-direction: column;
 }
 
+#loader {
+    position: relative;
+}
+
 .about-container {
     display: flex;
     flex-direction: column;

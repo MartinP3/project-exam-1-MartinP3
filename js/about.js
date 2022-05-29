@@ -25,7 +25,7 @@ async function addAboutContent() {
             alt="${aboutInfo.better_featured_image.alt_text}">
         </div>
         <div class="container">
-        <h1 class="title">About me</h1>
+        <h1>About me</h1>
         ${aboutInfo.content.rendered}
         </div>`;
   
