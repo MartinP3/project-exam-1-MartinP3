@@ -20,7 +20,7 @@ main {
     width: 100%;
     background: var(--yellowColor);
     padding-bottom: 1rem;
-    margin: 1em 0;
+    margin: 1rem 0;
     border-radius: 5px;
 }
 
@@ -32,7 +32,7 @@ main {
 
 .food-name {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     padding-top: 5px;
 }
 
@@ -45,7 +45,7 @@ main button {
 .more-posts {
     max-width: 250px;
     padding: 1rem;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     background-color: var(--buttonColor);
     color: var(--whiteColor);
     border: solid 1px var(--buttonColor);
@@ -53,7 +53,7 @@ main button {
 }
 
 .more-posts:hover{
-    padding: 1em;
+    padding: 1rem;
     background-color: rgb(182, 182, 182);
     color: var(--blackColor);
 }

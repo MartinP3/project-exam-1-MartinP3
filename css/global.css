@@ -12,8 +12,8 @@ body {
 }
 
 :root {
-    --bodyFont:  'Roboto', sans-serif;
-    --headerFont:'Libre Baskerville', serif;
+    --bodyFont: 'Roboto', sans-serif;
+    --headerFont: 'Poppins', sans-serif;
     --playfairFont: 'Playfair Display', 'Times new';
 
     --bodyColor: #efefef;
@@ -38,7 +38,7 @@ body {
     width: 100%;
     background: var(--yellowColor);
     padding: 1.5rem;
-    margin: 1em 0;
+    margin: 1rem 0;
     border-radius: 5px;
 }
 
@@ -56,10 +56,14 @@ button:hover,
     cursor: pointer;
 }
 
+h1, h2, h3, .title {
+    font-family: var(--headerFont);
+}
+
 .active {
     color: var(--brownYellowColor);
     text-decoration: underline;
-    font-size: 1.2em;
+    font-size: 1.5rem;
 }
 
 @keyframes spin {
@@ -78,7 +82,7 @@ button:hover,
     border-bottom: 16px solid var(--yellowColor);
     border-left: 16px solid var(--blackColor);
     animation: spin 2s linear infinite;
-    margin: 3em 0;
+    margin: 3rem 0;
   }
 
   #myDiv {
@@ -93,7 +97,7 @@ button:hover,
 
 /* Form */
 .container .title {
-    font-size: 2.5em;
+    font-size: 2rem;
     position: relative;
 }
 
@@ -103,10 +107,6 @@ button:hover,
     margin-bottom: 5px;
 }
 
-h1, h2, h3 {
-    font-family: var(--headerFont);
-}
-
 form h3 {
     padding-bottom: 10px;
 }
@@ -114,7 +114,7 @@ form h3 {
 form .button input{
     width: 100%;
     padding: 1rem;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     background-color: var(--buttonColor);
     color: var(--whiteColor);
     border: solid 1px var(--buttonColor);
@@ -145,7 +145,7 @@ textarea {
     resize: none;
     min-height: 150px;
     max-height: 150px;
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 .form-error {
@@ -166,7 +166,7 @@ textarea {
 /* Header */
 header {
  text-align: center;
- padding-top: 1em;
+ padding-top: 1rem;
 }
 .headerLogo {
     max-height: 96px;
@@ -180,18 +180,18 @@ header {
 
 .headerQuote {
     font-family: var(--playfairFont);
-    font-size: 2.0em;
+    font-size: 2.0rem;
 }
 nav {
-    margin-top: 0.9em;
-    margin-bottom: 0.9em;
+    margin-top: 0.9rem;
+    margin-bottom: 0.9rem;
     list-style: none;
 }
 
 nav li {
     display: inline-block;
-    margin: 0 0.5em;
-    font-size: 1.5em;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
 }
 
 nav a {
@@ -215,7 +215,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 2em;
+    gap: 2rem;
 }
 
 .footer-copyright {
@@ -225,7 +225,7 @@ footer {
 
 .footer-links div,
 .footer-social-media div {
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 .footer-links div {
@@ -255,16 +255,16 @@ footer {
     }
     header a,
     header .active {
-        font-size: 1em;
+        font-size: 1rem;
     }
     header .headerQuote {
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
 }
 
 @media (max-width: 400px) {
     header a,
      header .active {
-         font-size: 0.8em;
+         font-size: 0.8rem;
      }
 }
