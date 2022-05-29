@@ -21,7 +21,7 @@ async function addAllBlogs(url) {
             <div class="blog-cards">
                 <a href="blogpage.html?id=${post.id}">
                 <img src="${post.better_featured_image.source_url}" alt="${post.better_featured_image.alt_text}">
-                <p class="food-name">${post.title.rendered}</p>
+                <h2 class="food-name">${post.title.rendered}</h2>
             </a></div>`
         });
     } catch (error) {
