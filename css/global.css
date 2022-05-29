@@ -6,12 +6,15 @@ body {
     max-width: 100%;
     min-height: 100vh;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--bodyFont);
     display: block;
     background-color: #efefef
 }
 
 :root {
+    --bodyFont:  'Roboto', sans-serif;
+    --headerFont:'Libre Baskerville', serif;
+    
     --lightYellowColor: #FFE5A3;
     --brownYellowColor: #956a00;
     --yellowColor: #ffd66f;
@@ -95,6 +98,10 @@ button:hover,
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 5px;
+}
+
+h1, h2, h3 {
+    font-family: var(--headerFont);
 }
 
 form h3 {
