@@ -20,7 +20,7 @@ async function addAllBlogs(url) {
             blogContainer.innerHTML += `
             <div class="blog-cards">
                 <a href="blogpage.html?id=${post.id}">
-                <img src="${post.better_featured_image.source_url}">
+                <img src="${post.better_featured_image.source_url}" alt="${post.better_featured_image.alt_text}">
                 <p class="food-name">${post.title.rendered}</p>
             </a></div>`
         });

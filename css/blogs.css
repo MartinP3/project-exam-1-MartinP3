@@ -7,6 +7,11 @@ main {
     align-items: center;
 }
 
+h1 {
+    text-align: center;
+    color: var(--brownYellowColor);
+}
+
 .blogs-container {
     display: grid;
     grid-template-rows: 1fr 1fr;
